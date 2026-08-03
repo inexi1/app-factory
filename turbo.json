@@ -3,7 +3,7 @@
   "tasks": {
     "dev": { "cache": false, "persistent": true },
     "start": { "cache": false, "persistent": true },
-    "build": { "outputs": [".next/**", "dist/**"], "dependsOn": ["^build"] },
+    "build": { "outputs": [".next/**", "dist/**"], "dependsOn": ["^build"], "env": ["APP_ID"] },
     "lint": {},
     "typecheck": {}
   }
