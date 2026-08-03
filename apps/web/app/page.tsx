@@ -563,7 +563,8 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <button style={{
+                <a href="#waitlist" style={{
+                  display: "block",
                   width: "100%",
                   padding: "15px",
                   borderRadius: "12px",
@@ -576,9 +577,12 @@ export default function Home() {
                   fontSize: "15px",
                   letterSpacing: "0.1px",
                   boxShadow: plan.highlight ? "0 4px 16px rgba(37,99,235,0.35)" : "none",
+                  textAlign: "center",
+                  textDecoration: "none",
+                  boxSizing: "border-box",
                 }}>
                   {plan.cta}
-                </button>
+                </a>
               </div>
             ))}
           </div>
