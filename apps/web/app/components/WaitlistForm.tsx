@@ -6,12 +6,18 @@ export function WaitlistForm({ dark = false }: { dark?: boolean }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "success">("idle");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
-    // TODO: wire to backend / email service
-    setStatus("success");
-    setEmail("");
+    const res = await fetch("https://formspree.io/f/mlgqqyqj", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ email }),
+    });
+    if (res.ok) {
+      setStatus("success");
+      setEmail("");
+    }
   }
 
   if (status === "success") {
