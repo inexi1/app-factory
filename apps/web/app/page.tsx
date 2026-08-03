@@ -1,4 +1,5 @@
 import { WaitlistForm } from "./components/WaitlistForm";
+import { FaqAccordion } from "./components/FaqAccordion";
 
 const problems = [
   {
@@ -76,24 +77,6 @@ const plans = [
   },
 ];
 
-const faqs = [
-  {
-    q: "Do I need any technical knowledge to use HelpIQ?",
-    a: "None at all. Just describe your problem the way you'd explain it to a friend. HelpIQ handles the technical interpretation.",
-  },
-  {
-    q: "What kinds of problems can HelpIQ solve?",
-    a: "Printer issues, Wi-Fi and network problems, software errors, email setup, file recovery, slow computer. If it's something you'd normally call a tech guy for, HelpIQ can handle it.",
-  },
-  {
-    q: "What happens if HelpIQ can't solve my problem?",
-    a: "It gives you a clear summary of what's been tried so far, so you can hand it off to a technician without wasting time re-explaining.",
-  },
-  {
-    q: "Is my data private?",
-    a: "Yes. Your queries are used only to generate your answer and are never sold or shared. We're SOC 2 compliant (in progress).",
-  },
-];
 
 export default function Home() {
   return (
@@ -600,23 +583,7 @@ export default function Home() {
               Common questions
             </h2>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            {faqs.map((item) => (
-              <div key={item.q} style={{
-                background: "var(--color-background)",
-                border: "1px solid #E5E7EB",
-                borderRadius: "14px",
-                padding: "24px 28px",
-              }}>
-                <h3 style={{ fontWeight: 700, fontSize: "16px", marginBottom: "10px", color: "#0F172A", letterSpacing: "-0.2px" }}>
-                  {item.q}
-                </h3>
-                <p style={{ fontSize: "15px", color: "var(--color-text-muted)", lineHeight: 1.65 }}>
-                  {item.a}
-                </p>
-              </div>
-            ))}
-          </div>
+          <FaqAccordion />
         </div>
       </section>
 
