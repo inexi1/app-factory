@@ -665,8 +665,14 @@ export default function Home() {
                 <p style={{ fontSize: "13px", fontWeight: 700, color: "#fff", marginBottom: "12px" }}>Contact</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   <a href="mailto:hello@helpiq.dev" style={{ fontSize: "14px", color: "#94A3B8" }}>hello@helpiq.dev</a>
-                  <a href="https://www.facebook.com/helpiq1" target="_blank" rel="noopener" style={{ fontSize: "14px", color: "#94A3B8" }}>Facebook</a>
-                  <a href="https://www.instagram.com/helpiq1" target="_blank" rel="noopener" style={{ fontSize: "14px", color: "#94A3B8" }}>Instagram</a>
+                  <div style={{ display: "flex", gap: "16px", marginTop: "4px" }}>
+                    <a href="https://www.facebook.com/helpiq1" target="_blank" rel="noopener" title="Facebook" style={{ color: "#94A3B8" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/helpiq1" target="_blank" rel="noopener" title="Instagram" style={{ color: "#94A3B8" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
