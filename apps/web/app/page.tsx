@@ -666,6 +666,7 @@ export default function Home() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   <a href="mailto:hello@helpiq.dev" style={{ fontSize: "14px", color: "#94A3B8" }}>hello@helpiq.dev</a>
                   <a href="https://www.facebook.com/helpiq1" target="_blank" rel="noopener" style={{ fontSize: "14px", color: "#94A3B8" }}>Facebook</a>
+                  <a href="https://www.instagram.com/helpiq1" target="_blank" rel="noopener" style={{ fontSize: "14px", color: "#94A3B8" }}>Instagram</a>
                 </div>
               </div>
             </div>
