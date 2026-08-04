@@ -671,7 +671,6 @@ export default function Home() {
           </div>
           <div style={{ borderTop: "1px solid #1E293B", paddingTop: "24px", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
             <p style={{ fontSize: "13px" }}>© 2026 HelpIQ. All rights reserved.</p>
-            <p style={{ fontSize: "13px" }}>Built in Pittsburgh, PA 🇺🇸</p>
           </div>
         </div>
       </footer>
