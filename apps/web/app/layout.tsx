@@ -83,6 +83,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Core */}
+        <meta name="google-site-verification" content="JiemEvArx3UNpyHGu7HJUuXviSgUK18of_sqybUWXTA" />
         <title>HelpIQ - AI IT Support for Small Business | 24/7, No Ticket Required</title>
         <meta
           name="description"
