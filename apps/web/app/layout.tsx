@@ -10,10 +10,12 @@ const jsonLd = {
     {
       "@type": "SoftwareApplication",
       "name": "HelpIQ",
+      "alternateName": "HelpIQ IT Support",
       "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "IT Support Software",
       "operatingSystem": "Web",
       "description":
-        "AI-powered IT support for small businesses. Fix printer issues, Wi-Fi problems, and software errors in under 10 seconds, 24/7. No ticket, no technician, no wait.",
+        "HelpIQ is an AI-powered IT troubleshooting tool for small business owners. It fixes technical problems like printer errors, Wi-Fi drops, and Windows software issues in under 10 seconds - without a helpdesk ticket, chatbot widget, or technician. Not a customer support chatbot.",
       "url": SITE_URL,
       "offers": {
         "@type": "Offer",
@@ -21,10 +23,15 @@ const jsonLd = {
         "priceCurrency": "USD",
         "description": "Free during early access",
       },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Small business owners without dedicated IT staff",
+      },
     },
     {
       "@type": "Organization",
       "name": "HelpIQ",
+      "description": "HelpIQ provides AI-powered IT troubleshooting for small businesses. Fix printer issues, Wi-Fi problems, and software errors instantly - no IT department needed.",
       "url": SITE_URL,
       "email": "hello@helpiq.dev",
       "sameAs": [
@@ -67,6 +74,14 @@ const jsonLd = {
             "text": "Yes. Your queries are used only to generate your answer and are never sold or shared. We're SOC 2 compliant (in progress).",
           },
         },
+        {
+          "@type": "Question",
+          "name": "Is HelpIQ a customer support chatbot for websites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. HelpIQ is an IT troubleshooting tool for small business owners - not a chatbot you embed on a website to handle customer questions. It helps you personally fix technical problems like printer errors, Wi-Fi drops, and Windows software issues, step by step.",
+          },
+        },
       ],
     },
   ],
@@ -84,10 +99,14 @@ export default function RootLayout({
       <head>
         {/* Core */}
         <meta name="google-site-verification" content="JiemEvArx3UNpyHGu7HJUuXviSgUK18of_sqybUWXTA" />
-        <title>HelpIQ - AI IT Support for Small Business | 24/7, No Ticket Required</title>
+        <title>HelpIQ - AI IT Troubleshooting for Small Business | Fix Tech Problems in Seconds</title>
         <meta
           name="description"
-          content="HelpIQ gives small businesses instant IT support powered by AI. Fix printer issues, Wi-Fi problems, and software errors in under 10 seconds. No wait, no ticket, no technician bill."
+          content="HelpIQ is an AI IT troubleshooting tool built for small business owners. Describe your tech problem - printer offline, Wi-Fi down, software error - and get a step-by-step fix in under 10 seconds. No ticket, no technician, no wait."
+        />
+        <meta
+          name="keywords"
+          content="AI IT support, IT troubleshooting, small business IT help, fix printer offline, Wi-Fi not working, software error fix, no IT department, instant tech support"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={SITE_URL} />
