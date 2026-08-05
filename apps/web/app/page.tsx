@@ -110,9 +110,9 @@ export default function Home() {
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "32px" }}>
-          <a href="#how-it-works" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)" }}>How it works</a>
-          <a href="#pricing" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)" }}>Pricing</a>
-          <a href="#faq" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)" }}>FAQ</a>
+          <a href="#how-it-works" className="nav-link" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)", whiteSpace: "nowrap" }}>How it works</a>
+          <a href="#pricing" className="nav-link" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)", whiteSpace: "nowrap" }}>Pricing</a>
+          <a href="#faq" className="nav-link" style={{ fontSize: "14px", fontWeight: 500, color: "var(--color-text-muted)", whiteSpace: "nowrap" }}>FAQ</a>
           <a href="#waitlist" style={{
             fontSize: "14px", fontWeight: 700,
             background: "var(--color-primary)",
@@ -212,7 +212,7 @@ export default function Home() {
         background: "var(--color-text)",
         padding: "28px 40px",
       }}>
-        <div style={{
+        <div className="stats-grid" style={{
           maxWidth: "900px",
           margin: "0 auto",
           display: "grid",
@@ -222,7 +222,7 @@ export default function Home() {
         }}>
           {stats.map((s) => (
             <div key={s.value}>
-              <div style={{ fontSize: "28px", fontWeight: 800, color: "#fff", letterSpacing: "-0.5px" }}>{s.value}</div>
+              <div style={{ fontSize: "28px", fontWeight: 800, color: "#fff", letterSpacing: "-0.5px", whiteSpace: "nowrap" }}>{s.value}</div>
               <div style={{ fontSize: "13px", color: "#94A3B8", marginTop: "4px" }}>{s.label}</div>
             </div>
           ))}

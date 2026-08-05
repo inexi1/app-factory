@@ -44,3 +44,8 @@ input {
 .fade-up-2 { animation: fadeUp 0.55s 0.1s ease both; }
 .fade-up-3 { animation: fadeUp 0.55s 0.2s ease both; }
 .fade-up-4 { animation: fadeUp 0.55s 0.3s ease both; }
+
+@media (max-width: 640px) {
+  .nav-link { display: none; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
