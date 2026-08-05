@@ -101,14 +101,18 @@ export default function RootLayout({
           property="og:description"
           content="Instant IT support for small businesses, powered by AI. Fix any tech problem in under 10 seconds, 24/7. No ticket required."
         />
+        <meta property="og:image" content={`${SITE_URL}/opengraph-image`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         {/* Twitter / X */}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="HelpIQ - AI IT Support for Small Business" />
         <meta
           name="twitter:description"
           content="Instant IT support for small businesses, powered by AI. Fix any tech problem in under 10 seconds, 24/7."
         />
+        <meta name="twitter:image" content={`${SITE_URL}/opengraph-image`} />
 
         {/* Structured data */}
         <script
